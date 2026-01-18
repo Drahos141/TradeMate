@@ -1,0 +1,9 @@
+.price-chart {
+  width: 100%;
+}
+
+.no-data {
+  color: #9ca3af;
+  text-align: center;
+  padding: 2rem;
+}

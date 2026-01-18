@@ -1,0 +1,63 @@
+.market-data {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.price-display {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.current-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e0e0e0;
+}
+
+.price-change {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.price-change.positive {
+  color: #10b981;
+}
+
+.price-change.negative {
+  color: #ef4444;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.data-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  background: #0f1629;
+  border-radius: 6px;
+  border: 1px solid #1e2746;
+}
+
+.data-item .label {
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.data-item .value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.no-data {
+  color: #9ca3af;
+  text-align: center;
+  padding: 2rem;
+}

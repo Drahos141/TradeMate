@@ -1,0 +1,89 @@
+.prediction-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.prediction-price {
+  text-align: center;
+  padding: 1rem;
+  background: #0f1629;
+  border-radius: 8px;
+  border: 1px solid #1e2746;
+}
+
+.predicted-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.prediction-label {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.prediction-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #0f1629;
+  border-radius: 6px;
+  border: 1px solid #1e2746;
+}
+
+.detail-label {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.detail-value {
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.detail-value.positive {
+  color: #10b981;
+}
+
+.detail-value.negative {
+  color: #ef4444;
+}
+
+.detail-value.direction.bullish {
+  color: #10b981;
+  font-size: 1.1rem;
+}
+
+.detail-value.direction.bearish {
+  color: #ef4444;
+  font-size: 1.1rem;
+}
+
+.model-info {
+  padding-top: 0.75rem;
+  border-top: 1px solid #1e2746;
+}
+
+.model-label {
+  color: #6b7280;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.no-data {
+  color: #9ca3af;
+  text-align: center;
+  padding: 2rem;
+}

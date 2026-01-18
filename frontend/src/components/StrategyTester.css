@@ -1,0 +1,109 @@
+.strategy-tester {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.strategy-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: end;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.control-group label {
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+.control-group select,
+.control-group input {
+  background: #0f1629;
+  border: 1px solid #1e2746;
+  color: #e0e0e0;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  min-width: 120px;
+}
+
+.control-group select:focus,
+.control-group input:focus {
+  outline: none;
+  border-color: #4facfe;
+}
+
+.test-button {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border: none;
+  color: #0a0e27;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  height: fit-content;
+}
+
+.test-button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.test-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.strategy-results {
+  background: #0f1629;
+  border: 1px solid #1e2746;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.strategy-results h3 {
+  color: #e0e0e0;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.result-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: #1a1f3a;
+  border-radius: 6px;
+  border: 1px solid #1e2746;
+}
+
+.result-label {
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+.result-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #e0e0e0;
+}
+
+.result-value.positive {
+  color: #10b981;
+}
+
+.result-value.negative {
+  color: #ef4444;
+}
